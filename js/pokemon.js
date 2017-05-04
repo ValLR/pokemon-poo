@@ -22,12 +22,17 @@ function Pokemon(nombre,color,poderDeAtaque){
 	}
 }
 
-function statement(){
-	var pokemon1 = document.getElementById("fighter1");
-	var pokemon2 = document.getElementById("fighter2")
+
+function ultraViolence(){
+	var data = document.getElementById("caja");
 }
+
+
 var Pikachu = new Pokemon("Pikachu","amarillo", 55)
 var Charmander = new Pokemon("Charmander", "rojo", 52)
+
+
+
 
 var data = document.getElementById("caja");
 //data.innerHTML += Charmander.mostrarPokemon();
