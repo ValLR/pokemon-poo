@@ -25,6 +25,20 @@ function Pokemon(nombre,color,poderDeAtaque){
 
 function ultraViolence(){
 	var data = document.getElementById("caja");
+	var challenger = document.getElementById("fighter1").value;
+	var opponent = document.getElementById("fighter2").value;
+	var attackValue = prompt("Write your pokemon's attack points");
+	var attack1 = new Pokemon(challenger,"color",attackValue);
+	var attack2 = new Pokemon(opponent, "otro color", 57);
+
+	attack1.atacar(attack2);
+
+	if (attack2.vida < 1){
+		data.innerHTML = attack1.nombre + " has attacked " + attack2.nombre + "! And now "+ attack2.nombre +" it's DEAD. You murderer!";
+	}
+	else{
+	data.innerHTML = attack1.nombre + " has attacked " + attack2.nombre + "! And now "+ attack2.nombre +" has "+ attack2.vida + " life's points";
+	}
 }
 
 
